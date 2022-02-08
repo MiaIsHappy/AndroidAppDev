@@ -1,2 +1,3 @@
-# NUMAD22Sp_YutongShang
-Create an Android Mobile App
+#
+
+I am learning to create an Android Mobile App.
