@@ -153,7 +153,6 @@ public class MainActivity3 extends AppCompatActivity {
     }//end of init
 
     private void initialItemData(Bundle savedInstanceState) {
-
         // Not the first time to open this Activity
         if (savedInstanceState != null && savedInstanceState.containsKey(NUMBER_OF_ITEMS)) {
             Log.d("ASDF_xx","item not null");
