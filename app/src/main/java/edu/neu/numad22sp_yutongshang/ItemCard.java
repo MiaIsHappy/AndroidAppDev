@@ -10,17 +10,15 @@ public class ItemCard implements ItemClickListener {
     private final String itemName;
     private final String itemUrl;
     private final String itemDesc;
-    private boolean isChecked;
+    //private boolean isChecked;
 
     //Constructor
-    public ItemCard(String itemName, String itemUrl,String itemDesc,boolean isChecked) {
+    public ItemCard(String itemName, String itemUrl,String itemDesc) {
     //    this.imageSource = 0;
         this.itemName = itemName;
         this.itemUrl = itemUrl;
         this.itemDesc = itemDesc;
-        this.isChecked = isChecked;
-
-        Log.d("ASDF_3"," name: "+this.itemName+" url: "+ this.itemUrl+" desc: "+this.itemDesc+" ck: "+this.isChecked);
+        //this.isChecked = isChecked;
     }
 
     //Getters for the imageSource, itemName and itemDesc
@@ -41,19 +39,19 @@ public class ItemCard implements ItemClickListener {
     }
 
 
-    public boolean getStatus() {
-        return isChecked;
-    }
-
-
-    @Override
-    public void onItemClick(int position) {
-        isChecked = !isChecked;
-    }
-
-    @Override
-    public void onCheckBoxClick(int position) {
-        isChecked = !isChecked;
-    }
+//    public boolean getStatus() {
+//        return isChecked;
+//    }
+//
+//
+//    @Override
+//    public void onItemClick(int position) {
+//        isChecked = !isChecked;
+//    }
+//
+//    @Override
+//    public void onCheckBoxClick(int position) {
+//        isChecked = !isChecked;
+//    }
 
 }

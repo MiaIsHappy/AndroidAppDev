@@ -56,21 +56,19 @@ public class MainActivity3 extends AppCompatActivity {
 
         init(savedInstanceState);
 
-        Log.d("ASDF_x11","init complete");
-
 
 
         fab = findViewById(R.id.fab);
-        Log.d("ASDF_x12","fab");
 
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Log.d("ASDF_x13","fab");
-//                Snackbar.make(view, "Insert URLs", Snackbar.LENGTH_LONG)
-//                        .setAction("Action", null).show();
+
+//
                 int pos = 0;
                 popUpEditText(pos);
+                //Snackbar.make(view, "Successfully Inserted URLs", Snackbar.LENGTH_LONG)
+//                        .setAction("Action", null).show();
 
             }
         });
@@ -104,17 +102,16 @@ public class MainActivity3 extends AppCompatActivity {
         final EditText editTextNumEditText = (EditText) textEntryView
                 .findViewById(R.id.ownerphone);
         AlertDialog.Builder ad1 = new AlertDialog.Builder(MainActivity3.this);
-        ad1.setTitle("Add New URL:");
+        ad1.setTitle("Add New URL ");
 //        ad1.setIcon(android.R.drawable.ic_dialog_info);
         ad1.setView(textEntryView);
         ad1.setPositiveButton("Confirm", new DialogInterface.OnClickListener() {
             public void onClick(DialogInterface dialog, int i) {
 
-               //Toast.makeText(getApplicationContext(), "Successfully Added a URL", Toast.LENGTH_LONG).show();
-                Toast.makeText(getApplicationContext(), "Successfully Added a URL"+editTextName.getText().toString(), Toast.LENGTH_LONG).show();
-                Log.d("ASDF_1","url: "+editTextNumEditText.getText().toString());
+              //  Toast.makeText(getApplicationContext(), "Successfully Added a URL: "+editTextName.getText().toString(), Toast.LENGTH_LONG).show();
               addItem(position, editTextName.getText().toString(),editTextNumEditText.getText().toString());
-                Log.d("ASDF_5","tag2 ");
+
+                Snackbar.make(getWindow().getDecorView().getRootView(), "Successfully Inserted URLs: "+editTextName.getText().toString(), Snackbar.LENGTH_LONG).setAction("Action", null).show();
             }
         });
         ad1.setNegativeButton("Cancel", new DialogInterface.OnClickListener() {
@@ -141,13 +138,12 @@ public class MainActivity3 extends AppCompatActivity {
             // put itemDesc information into instance
             outState.putString(KEY_OF_INSTANCE + i + "3", itemList.get(i).getItemDesc());
             // put isChecked information into instance
-            outState.putBoolean(KEY_OF_INSTANCE + i + "4", itemList.get(i).getStatus());
+           // outState.putBoolean(KEY_OF_INSTANCE + i + "4", itemList.get(i).getStatus());
         }
         super.onSaveInstanceState(outState);
     }//End of on Save IsntanceState
 
     private void init(Bundle savedInstanceState) {
-        Log.d("ASDF_x10","init");
         initialItemData(savedInstanceState);
         createRecyclerView();
     }//end of init
@@ -164,24 +160,22 @@ public class MainActivity3 extends AppCompatActivity {
                     String itemName = savedInstanceState.getString(KEY_OF_INSTANCE + i + "1");
                     String itemUrl = savedInstanceState.getString(KEY_OF_INSTANCE + i + "2");
                     String itemDesc = savedInstanceState.getString(KEY_OF_INSTANCE + i + "3");
-                    boolean isChecked = savedInstanceState.getBoolean(KEY_OF_INSTANCE + i + "4");
+                  //  boolean isChecked = savedInstanceState.getBoolean(KEY_OF_INSTANCE + i + "4");
 
                     // We need to make sure names such as "XXX(checked)" will not duplicate
                     // Use a tricky way to solve this problem, not the best though
-                    if (isChecked) {
-                        itemName = itemName.substring(0, itemName.lastIndexOf("("));
-                    }
-                    ItemCard itemCard = new ItemCard(itemName, itemUrl, itemDesc, isChecked);
+                   // if (isChecked) {
+                    //    itemName = itemName.substring(0, itemName.lastIndexOf("("));
+                    //}
+                    ItemCard itemCard = new ItemCard(itemName, itemUrl, itemDesc);
 
-                    Log.d("ASDF_x7","ad_item_card");
                     itemList.add(itemCard);
-                    Log.d("ASDF_x8","ad_item_card");
                 }
             }
         }
         // The first time to open this Activity
         else {
-            ItemCard item1 = new ItemCard("test", "Gmail", "Example description", false);
+            ItemCard item1 = new ItemCard("Google", "https://www.google.com", "Item id: 11111(Generated Randomly)");
             itemList.add(item1);
 
         }
@@ -193,35 +187,35 @@ public class MainActivity3 extends AppCompatActivity {
         recyclerView.setHasFixedSize(true);
 
         rviewAdapter = new RviewAdapter(itemList);
-        ItemClickListener itemClickListener = new ItemClickListener() {
-            @Override
-            public void onItemClick(int position) {
-                //attributions bond to the item has been changed
-                itemList.get(position).onItemClick(position);
+//        ItemClickListener itemClickListener = new ItemClickListener() {
+//            @Override
+//            public void onItemClick(int position) {
+//                //attributions bond to the item has been changed
+//                itemList.get(position).onItemClick(position);
+//
+//                rviewAdapter.notifyItemChanged(position);
+//            }
 
-                rviewAdapter.notifyItemChanged(position);
-            }
-
-            @Override
-            public void onCheckBoxClick(int position) {
-                //attributions bond to the item has been changed
-                itemList.get(position).onCheckBoxClick(position);
-
-                rviewAdapter.notifyItemChanged(position);
-            }
-        };
-        rviewAdapter.setOnItemClickListener(itemClickListener);
+        //    @Override
+//            public void onCheckBoxClick(int position) {
+//                //attributions bond to the item has been changed
+//                itemList.get(position).onCheckBoxClick(position);
+//
+//                rviewAdapter.notifyItemChanged(position);
+//            }
+      //  };
+       // rviewAdapter.setOnItemClickListener(itemClickListener);
 
         recyclerView.setAdapter(rviewAdapter);
         recyclerView.setLayoutManager(rLayoutManger);
-        Log.d("ASDF_x6","created recycle view");
+        //Log.d("ASDF_x6","created recycle view");
     }//createRecyclerView
 
     private void addItem(int position, String name, String url) {
 
-        itemList.add(position, new ItemCard( name, url,"Item id: " + Math.abs(new Random().nextInt(100000)), false));
+        itemList.add(position, new ItemCard( name, url,"Item id: " + Math.abs(new Random().nextInt(100000))));
         Log.d("ASDF_2","pos: "+position+"name: "+name+"url: "+ url);
-        Toast.makeText(edu.neu.numad22sp_yutongshang.MainActivity3.this, "Add an XXXXX", Toast.LENGTH_SHORT).show();
+      //  Toast.makeText(edu.neu.numad22sp_yutongshang.MainActivity3.this, "Added an URL", Toast.LENGTH_SHORT).show();
         rviewAdapter.notifyItemInserted(position);
         Log.d("ASDF_4","tag");
 

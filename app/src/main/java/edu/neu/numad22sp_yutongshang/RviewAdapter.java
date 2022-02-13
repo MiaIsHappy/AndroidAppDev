@@ -13,31 +13,31 @@ import java.util.ArrayList;
 public class RviewAdapter extends RecyclerView.Adapter<RviewHolder> {
 
     private final ArrayList<ItemCard> itemList;
-    private ItemClickListener listener;
+    //private ItemClickListener listener;
 
     //Constructor
     public RviewAdapter(ArrayList<ItemCard> itemList) {
         this.itemList = itemList;
     }
 
-    public void setOnItemClickListener(ItemClickListener listener) {
-        this.listener = listener;
-    }
-
+//    public void setOnItemClickListener(ItemClickListener listener) {
+//        this.listener = listener;
+//    }
+//
     @Override
     public RviewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
         View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.item_card, parent, false);
-        return new RviewHolder(view, listener);
+        return new RviewHolder(view);
     }
 
     @Override
     public void onBindViewHolder(RviewHolder holder, int position) {
         ItemCard currentItem = itemList.get(position);
-        Log.d("ASDF_156", "size "+itemList.size());
-        Log.d("ASDF_y2","current item "+currentItem.getItemName());
-        Log.d("ASDF_y3","current item "+currentItem.getItemUrl());
-        Log.d("ASDF_y4","current item "+holder.itemDesc.getText());
-        Log.d("ASDF_y5","current item "+currentItem.getStatus());
+//        Log.d("ASDF_156", "size "+itemList.size());
+//        Log.d("ASDF_y2","current item "+currentItem.getItemName());
+//        Log.d("ASDF_y3","current item "+currentItem.getItemUrl());
+//        Log.d("ASDF_y4","current item "+holder.itemDesc.getText());
+//        Log.d("ASDF_y5","current item "+currentItem.getStatus());
 
     //    holder.itemIcon.setImageResource(currentItem.getImageSource());
         //currentItem could be null? or ItemUrl?
@@ -48,7 +48,7 @@ public class RviewAdapter extends RecyclerView.Adapter<RviewHolder> {
 
         holder.itemDesc.setText(currentItem.getItemDesc());
 
-        holder.checkBox.setChecked(currentItem.getStatus());
+       // holder.checkBox.setChecked(currentItem.getStatus());
     }
 
     @Override
