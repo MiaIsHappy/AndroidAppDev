@@ -52,7 +52,7 @@ public class MainActivity3 extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
 
-        Log.d("ASDF_x0","createeee");
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main3);
 
@@ -128,26 +128,25 @@ public class MainActivity3 extends AppCompatActivity {
         ad1.show();
     }// End of popUpEdit Text
 
-//    protected void onSaveInstanceState(@NonNull Bundle outState) {
-//        int size = itemList == null ? 0 : itemList.size();
-//        outState.putInt(NUMBER_OF_ITEMS, size);
-//
-//        // Need to generate unique key for each item
-//        // This is only a possible way to do, please find your own way to generate the key
-//        for (int i = 0; i < size; i++) {
-//            // put image information id into instance
-////            outState.putInt(KEY_OF_INSTANCE + i + "0", itemList.get(i).getImageSource());
-//            // put itemName information into instance
-//            outState.putString(KEY_OF_INSTANCE + i + "1", itemList.get(i).getItemName());
-//            // put itemName information into instance
-//            outState.putString(KEY_OF_INSTANCE + i + "2", itemList.get(i).getItemUrl());
-//            // put itemDesc information into instance
-//            outState.putString(KEY_OF_INSTANCE + i + "3", itemList.get(i).getItemDesc());
-//            // put isChecked information into instance
-//           // outState.putBoolean(KEY_OF_INSTANCE + i + "4", itemList.get(i).getStatus());
-//        }
-//        super.onSaveInstanceState(outState);
-//    }//End of on Save IsntanceState
+    protected void onSaveInstanceState(@NonNull Bundle outState) {
+        int size = itemList == null ? 0 : itemList.size();
+        outState.putInt(NUMBER_OF_ITEMS, size);
+
+        // Need to generate unique key for each item
+        for (int i = 0; i < size; i++) {
+            // put image information id into instance
+//            outState.putInt(KEY_OF_INSTANCE + i + "0", itemList.get(i).getImageSource());
+            // put itemName information into instance
+            outState.putString(KEY_OF_INSTANCE + i + "1", itemList.get(i).getItemName());
+            // put itemName information into instance
+            outState.putString(KEY_OF_INSTANCE + i + "2", itemList.get(i).getItemUrl());
+            // put itemDesc information into instance
+            outState.putString(KEY_OF_INSTANCE + i + "3", itemList.get(i).getItemDesc());
+            // put isChecked information into instance
+           // outState.putBoolean(KEY_OF_INSTANCE + i + "4", itemList.get(i).getStatus());
+        }
+        super.onSaveInstanceState(outState);
+    }//End of on Save IsntanceState
 
     private void init(Bundle savedInstanceState) {
         initialItemData(savedInstanceState);
