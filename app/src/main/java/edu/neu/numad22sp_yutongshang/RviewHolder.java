@@ -1,12 +1,14 @@
 package edu.neu.numad22sp_yutongshang;
-
 import android.content.Intent;
 import android.net.Uri;
+import android.app.Activity;
+import android.content.Context;
 import android.text.method.LinkMovementMethod;
 import android.view.View;
 import android.widget.CheckBox;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.os.Bundle;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
@@ -27,10 +29,9 @@ public class RviewHolder extends RecyclerView.ViewHolder {
        // checkBox = itemView.findViewById(R.id.checkbox);
 
        itemUrl.setMovementMethod(LinkMovementMethod.getInstance());
-//       String url = itemUrl.getText().toString();
-//       Intent i = new Intent(Intent.ACTION_VIEW);
-//       i.setData(Uri.parse(url));
-//       startActivity(i);
+       String url = itemUrl.getText().toString();
+       Intent i = new Intent(Intent.ACTION_VIEW);
+       i.setData(Uri.parse(url));
 //
 //        itemView.setOnClickListener(new View.OnClickListener() {
 //            @Override

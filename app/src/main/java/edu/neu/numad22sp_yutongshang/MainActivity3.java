@@ -93,7 +93,6 @@ public class MainActivity3 extends AppCompatActivity {
         itemTouchHelper.attachToRecyclerView(recyclerView);
     }
     //end of OnCreate
-
     private void popUpEditText(int position) {
         LayoutInflater factory = LayoutInflater.from(this);
         final View textEntryView = factory.inflate(R.layout.dialog, null);
@@ -116,6 +115,8 @@ public class MainActivity3 extends AppCompatActivity {
         });
         ad1.setNegativeButton("Cancel", new DialogInterface.OnClickListener() {
             public void onClick(DialogInterface dialog, int i) {
+                Snackbar.make(getWindow().getDecorView().getRootView(), "Cancelled Adding Urls ", Snackbar.LENGTH_LONG).setAction("Action", null).show();
+
             }
         });
         ad1.show();
@@ -175,8 +176,8 @@ public class MainActivity3 extends AppCompatActivity {
         }
         // The first time to open this Activity
         else {
-            ItemCard item1 = new ItemCard("Google", "https://www.google.com", "Item id: 11111(Generated Randomly)");
-            itemList.add(item1);
+//            ItemCard item1 = new ItemCard("Google", "https://www.google.com", "Item id: 11111(Generated Randomly)");
+//            itemList.add(item1);
 
         }
     }//initialItemData

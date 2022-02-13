@@ -9,6 +9,7 @@
         android:roundIcon="@mipmap/ic_launcher_yt_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.NUMAD22Sp_YutongShang" >
+
         <activity
             android:name=".MainActivity3"
             android:exported="false" />
