@@ -31,6 +31,8 @@ import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
 import java.util.ArrayList;
 import java.util.Random;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 public class MainActivity3 extends AppCompatActivity {
     //Creating the essential parts needed for a Recycler view to work: RecyclerView, Adapter, LayoutManager
@@ -107,42 +109,45 @@ public class MainActivity3 extends AppCompatActivity {
         ad1.setPositiveButton("Confirm", new DialogInterface.OnClickListener() {
             public void onClick(DialogInterface dialog, int i) {
 
-              //  Toast.makeText(getApplicationContext(), "Successfully Added a URL: "+editTextName.getText().toString(), Toast.LENGTH_LONG).show();
-              addItem(position, editTextName.getText().toString(),editTextNumEditText.getText().toString());
 
-                Snackbar.make(getWindow().getDecorView().getRootView(), "Successfully Inserted URLs: "+editTextName.getText().toString(), Snackbar.LENGTH_LONG).setAction("Action", null).show();
+              //  Toast.makeText(getApplicationContext(), "Successfully Added a URL: "+editTextName.getText().toString(), Toast.LENGTH_LONG).show();
+                if(ishttpurl(editTextNumEditText.getText().toString())==true)
+                {addItem(position, editTextName.getText().toString(),editTextNumEditText.getText().toString());
+              Snackbar.make(getWindow().getDecorView().getRootView(), "Successfully Inserted URLs: "+editTextName.getText().toString(), Snackbar.LENGTH_LONG).setAction("Action", null).show();}
+                else{
+                    Snackbar.make(getWindow().getDecorView().getRootView(), "Invalid Url, Please Check! ", Snackbar.LENGTH_LONG).setAction("Action", null).show();
+                }
             }
         });
         ad1.setNegativeButton("Cancel", new DialogInterface.OnClickListener() {
             public void onClick(DialogInterface dialog, int i) {
-                Snackbar.make(getWindow().getDecorView().getRootView(), "Cancelled Adding Urls ", Snackbar.LENGTH_LONG).setAction("Action", null).show();
+                Snackbar.make(getWindow().getDecorView().getRootView(), "Cancel Adding Urls ", Snackbar.LENGTH_LONG).setAction("Action", null).show();
 
             }
         });
         ad1.show();
     }// End of popUpEdit Text
 
-    protected void onSaveInstanceState(@NonNull Bundle outState) {
-
-        int size = itemList == null ? 0 : itemList.size();
-        outState.putInt(NUMBER_OF_ITEMS, size);
-
-        // Need to generate unique key for each item
-        // This is only a possible way to do, please find your own way to generate the key
-        for (int i = 0; i < size; i++) {
-            // put image information id into instance
-//            outState.putInt(KEY_OF_INSTANCE + i + "0", itemList.get(i).getImageSource());
-            // put itemName information into instance
-            outState.putString(KEY_OF_INSTANCE + i + "1", itemList.get(i).getItemName());
-            // put itemName information into instance
-            outState.putString(KEY_OF_INSTANCE + i + "2", itemList.get(i).getItemUrl());
-            // put itemDesc information into instance
-            outState.putString(KEY_OF_INSTANCE + i + "3", itemList.get(i).getItemDesc());
-            // put isChecked information into instance
-           // outState.putBoolean(KEY_OF_INSTANCE + i + "4", itemList.get(i).getStatus());
-        }
-        super.onSaveInstanceState(outState);
-    }//End of on Save IsntanceState
+//    protected void onSaveInstanceState(@NonNull Bundle outState) {
+//        int size = itemList == null ? 0 : itemList.size();
+//        outState.putInt(NUMBER_OF_ITEMS, size);
+//
+//        // Need to generate unique key for each item
+//        // This is only a possible way to do, please find your own way to generate the key
+//        for (int i = 0; i < size; i++) {
+//            // put image information id into instance
+////            outState.putInt(KEY_OF_INSTANCE + i + "0", itemList.get(i).getImageSource());
+//            // put itemName information into instance
+//            outState.putString(KEY_OF_INSTANCE + i + "1", itemList.get(i).getItemName());
+//            // put itemName information into instance
+//            outState.putString(KEY_OF_INSTANCE + i + "2", itemList.get(i).getItemUrl());
+//            // put itemDesc information into instance
+//            outState.putString(KEY_OF_INSTANCE + i + "3", itemList.get(i).getItemDesc());
+//            // put isChecked information into instance
+//           // outState.putBoolean(KEY_OF_INSTANCE + i + "4", itemList.get(i).getStatus());
+//        }
+//        super.onSaveInstanceState(outState);
+//    }//End of on Save IsntanceState
 
     private void init(Bundle savedInstanceState) {
         initialItemData(savedInstanceState);
@@ -221,5 +226,22 @@ public class MainActivity3 extends AppCompatActivity {
         Log.d("ASDF_4","tag");
 
     }//End of addItem
+
+    public static boolean ishttpurl(String url){
+        boolean is_url = false;
+        //Set Reg Exp
+        String regex = "(((https|http)?://)?([a-z0-9]+[.])|(www.))"
+                + "\\w+[.|\\/]([a-z0-9]{0,})?[[.]([a-z0-9]{0,})]+((/[\\S&&[^,;\u4E00-\u9FA5]]+)+)?([.][a-z0-9]{0,}+|/?)";
+        //Compare
+        Pattern pat = Pattern.compile(regex.trim());
+        Matcher mat = pat.matcher(url.trim());
+        //Check
+        is_url = mat.matches();
+        if (is_url) {
+            is_url = true;
+        }
+        return is_url;
+    }
+
     }
 
