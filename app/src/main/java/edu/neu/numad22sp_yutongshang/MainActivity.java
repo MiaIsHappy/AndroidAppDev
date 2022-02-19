@@ -3,6 +3,7 @@ package edu.neu.numad22sp_yutongshang;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.Manifest;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -14,11 +15,13 @@ import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
 import java.util.ArrayList;
 
+import pub.devrel.easypermissions.AfterPermissionGranted;
+import pub.devrel.easypermissions.EasyPermissions;
+
 
 public class MainActivity extends AppCompatActivity {
 
     public ArrayList<ItemCard> itemList = new ArrayList<>();
-
 
 //    public RecyclerView recyclerView;
 //    public RviewAdapter rviewAdapter;
@@ -37,6 +40,7 @@ public class MainActivity extends AppCompatActivity {
         Button bt_2 = (Button) findViewById(R.id.button);
         Button bt_3 = (Button) findViewById(R.id.button2);
         Button bt_4 = (Button) findViewById(R.id.button3);
+
 
 
         bt_1.setOnClickListener(new View.OnClickListener() {
@@ -70,7 +74,8 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
-   // public void clickButton(android.view.View view){
+
+    // public void clickButton(android.view.View view){
     //    Toast.makeText(getApplicationContext(),"Yutong Shang shang.yut@northeastern.edu", Toast.LENGTH_SHORT).show();
     //}
 
