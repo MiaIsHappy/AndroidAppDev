@@ -96,8 +96,6 @@ public class MainActivity4<backgroundLocationRequestCode> extends AppCompatActiv
         super.onRequestPermissionsResult(requestCode, permissions, grantResults);
         // Forward results to EasyPermissions
         EasyPermissions.onRequestPermissionsResult(requestCode, permissions, grantResults, this);
-       // LocationManager locationManager = (LocationManager)getSystemService(LOCATION_SERVICE); //get system locationManager
-        //locationUpdates(location);
     }
 
 
