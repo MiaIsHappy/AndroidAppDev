@@ -30,7 +30,7 @@ import androidx.core.content.ContextCompat;
 
 import pub.devrel.easypermissions.AfterPermissionGranted;
 import pub.devrel.easypermissions.EasyPermissions;
-
+//For HW4 
 public class MainActivity4<backgroundLocationRequestCode> extends AppCompatActivity {
 
     private TextView text;
