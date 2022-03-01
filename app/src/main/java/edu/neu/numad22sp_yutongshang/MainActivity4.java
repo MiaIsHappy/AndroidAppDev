@@ -90,7 +90,6 @@ public class MainActivity4<backgroundLocationRequestCode> extends AppCompatActiv
         }
     }
 
-
     @Override
     public void onRequestPermissionsResult(int requestCode, String[] permissions, int[] grantResults) {
         super.onRequestPermissionsResult(requestCode, permissions, grantResults);
