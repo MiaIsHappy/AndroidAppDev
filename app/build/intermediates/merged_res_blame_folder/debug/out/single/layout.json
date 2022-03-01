@@ -1,0 +1,22 @@
+[
+    {
+        "merged": "C:\\Users\\miash\\AndroidStudioProjects\\NUMAD22Sp_YutongShang\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_main3.xml",
+        "source": "C:\\Users\\miash\\AndroidStudioProjects\\NUMAD22Sp_YutongShang\\app\\src\\main\\res\\layout\\activity_main3.xml"
+    },
+    {
+        "merged": "C:\\Users\\miash\\AndroidStudioProjects\\NUMAD22Sp_YutongShang\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_main2.xml",
+        "source": "C:\\Users\\miash\\AndroidStudioProjects\\NUMAD22Sp_YutongShang\\app\\src\\main\\res\\layout\\activity_main2.xml"
+    },
+    {
+        "merged": "C:\\Users\\miash\\AndroidStudioProjects\\NUMAD22Sp_YutongShang\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\item_card.xml",
+        "source": "C:\\Users\\miash\\AndroidStudioProjects\\NUMAD22Sp_YutongShang\\app\\src\\main\\res\\layout\\item_card.xml"
+    },
+    {
+        "merged": "C:\\Users\\miash\\AndroidStudioProjects\\NUMAD22Sp_YutongShang\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\dialog.xml",
+        "source": "C:\\Users\\miash\\AndroidStudioProjects\\NUMAD22Sp_YutongShang\\app\\src\\main\\res\\layout\\dialog.xml"
+    },
+    {
+        "merged": "C:\\Users\\miash\\AndroidStudioProjects\\NUMAD22Sp_YutongShang\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_main.xml",
+        "source": "C:\\Users\\miash\\AndroidStudioProjects\\NUMAD22Sp_YutongShang\\app\\src\\main\\res\\layout\\activity_main.xml"
+    }
+]

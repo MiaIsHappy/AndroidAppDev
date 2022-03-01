@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="edu.neu.numad22sp_yutongshang"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="26"
+        android:targetSdkVersion="32" />
+
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION" />
+
+    <application
+        android:allowBackup="true"
+        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+        android:extractNativeLibs="false"
+        android:icon="@mipmap/ic_launcher_yt"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_yt_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.NUMAD22Sp_YutongShang" >
+        <activity
+            android:name="edu.neu.numad22sp_yutongshang.MainActivity4"
+            android:exported="false" />
+        <activity
+            android:name="edu.neu.numad22sp_yutongshang.MainActivity1"
+            android:exported="false" />
+        <activity
+            android:name="edu.neu.numad22sp_yutongshang.MainActivity3"
+            android:exported="false" />
+        <activity
+            android:name="edu.neu.numad22sp_yutongshang.MainActivity2"
+            android:exported="false" />
+        <activity
+            android:name="edu.neu.numad22sp_yutongshang.MainActivity"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="pub.devrel.easypermissions.AppSettingsDialogHolderActivity"
+            android:exported="false"
+            android:label=""
+            android:theme="@style/EasyPermissions.Transparent" />
+        <activity
+            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+            android:exported="false"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <uses-library
+            android:name="androidx.window.extensions"
+            android:required="false" />
+        <uses-library
+            android:name="androidx.window.sidecar"
+            android:required="false" />
+    </application>
+
+</manifest>

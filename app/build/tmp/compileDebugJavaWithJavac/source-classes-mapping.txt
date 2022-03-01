@@ -1,0 +1,39 @@
+edu/neu/numad22sp_yutongshang/databinding/ActivityMain2Binding.java
+ edu.neu.numad22sp_yutongshang.databinding.ActivityMain2Binding
+edu/neu/numad22sp_yutongshang/databinding/ActivityMainBinding.java
+ edu.neu.numad22sp_yutongshang.databinding.ActivityMainBinding
+edu/neu/numad22sp_yutongshang/BuildConfig.java
+ edu.neu.numad22sp_yutongshang.BuildConfig
+edu/neu/numad22sp_yutongshang/databinding/ActivityMain3Binding.java
+ edu.neu.numad22sp_yutongshang.databinding.ActivityMain3Binding
+edu/neu/numad22sp_yutongshang/ItemClickListener.java
+ edu.neu.numad22sp_yutongshang.ItemClickListener
+edu/neu/numad22sp_yutongshang/ItemCard.java
+ edu.neu.numad22sp_yutongshang.ItemCard
+edu/neu/numad22sp_yutongshang/databinding/ItemCardBinding.java
+ edu.neu.numad22sp_yutongshang.databinding.ItemCardBinding
+edu/neu/numad22sp_yutongshang/MainActivity2.java
+ edu.neu.numad22sp_yutongshang.MainActivity2
+ edu.neu.numad22sp_yutongshang.MainActivity2$1
+ edu.neu.numad22sp_yutongshang.MainActivity2$2
+ edu.neu.numad22sp_yutongshang.MainActivity2$3
+ edu.neu.numad22sp_yutongshang.MainActivity2$4
+ edu.neu.numad22sp_yutongshang.MainActivity2$5
+ edu.neu.numad22sp_yutongshang.MainActivity2$6
+edu/neu/numad22sp_yutongshang/databinding/DialogBinding.java
+ edu.neu.numad22sp_yutongshang.databinding.DialogBinding
+edu/neu/numad22sp_yutongshang/RviewHolder.java
+ edu.neu.numad22sp_yutongshang.RviewHolder
+edu/neu/numad22sp_yutongshang/RviewAdapter.java
+ edu.neu.numad22sp_yutongshang.RviewAdapter
+edu/neu/numad22sp_yutongshang/MainActivity3.java
+ edu.neu.numad22sp_yutongshang.MainActivity3
+ edu.neu.numad22sp_yutongshang.MainActivity3$1
+ edu.neu.numad22sp_yutongshang.MainActivity3$2
+ edu.neu.numad22sp_yutongshang.MainActivity3$3
+ edu.neu.numad22sp_yutongshang.MainActivity3$4
+edu/neu/numad22sp_yutongshang/MainActivity.java
+ edu.neu.numad22sp_yutongshang.MainActivity
+ edu.neu.numad22sp_yutongshang.MainActivity$1
+ edu.neu.numad22sp_yutongshang.MainActivity$2
+ edu.neu.numad22sp_yutongshang.MainActivity$3

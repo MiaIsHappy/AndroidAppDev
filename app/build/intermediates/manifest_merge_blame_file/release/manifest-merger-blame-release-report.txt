@@ -1,0 +1,121 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="edu.neu.numad22sp_yutongshang"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="26"
+8-->C:\Users\miash\AndroidStudioProjects\NUMAD22Sp_YutongShang\app\src\main\AndroidManifest.xml
+9        android:targetSdkVersion="32" />
+9-->C:\Users\miash\AndroidStudioProjects\NUMAD22Sp_YutongShang\app\src\main\AndroidManifest.xml
+10
+11    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+11-->C:\Users\miash\AndroidStudioProjects\NUMAD22Sp_YutongShang\app\src\main\AndroidManifest.xml:34:5-81
+11-->C:\Users\miash\AndroidStudioProjects\NUMAD22Sp_YutongShang\app\src\main\AndroidManifest.xml:34:22-78
+12    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+12-->C:\Users\miash\AndroidStudioProjects\NUMAD22Sp_YutongShang\app\src\main\AndroidManifest.xml:35:5-79
+12-->C:\Users\miash\AndroidStudioProjects\NUMAD22Sp_YutongShang\app\src\main\AndroidManifest.xml:35:22-76
+13    <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION" />
+13-->C:\Users\miash\AndroidStudioProjects\NUMAD22Sp_YutongShang\app\src\main\AndroidManifest.xml:36:5-85
+13-->C:\Users\miash\AndroidStudioProjects\NUMAD22Sp_YutongShang\app\src\main\AndroidManifest.xml:36:22-82
+14
+15    <application
+15-->C:\Users\miash\AndroidStudioProjects\NUMAD22Sp_YutongShang\app\src\main\AndroidManifest.xml:5:5-33:19
+16        android:allowBackup="true"
+16-->C:\Users\miash\AndroidStudioProjects\NUMAD22Sp_YutongShang\app\src\main\AndroidManifest.xml:6:9-35
+17        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+17-->[androidx.core:core:1.5.0-rc01] C:\Users\miash\.gradle\caches\transforms-3\7defcf0d33d70e21a767a07666acefba\transformed\core-1.5.0-rc01\AndroidManifest.xml:24:18-86
+18        android:extractNativeLibs="false"
+19        android:icon="@mipmap/ic_launcher_yt"
+19-->C:\Users\miash\AndroidStudioProjects\NUMAD22Sp_YutongShang\app\src\main\AndroidManifest.xml:7:9-46
+20        android:label="@string/app_name"
+20-->C:\Users\miash\AndroidStudioProjects\NUMAD22Sp_YutongShang\app\src\main\AndroidManifest.xml:8:9-41
+21        android:roundIcon="@mipmap/ic_launcher_yt_round"
+21-->C:\Users\miash\AndroidStudioProjects\NUMAD22Sp_YutongShang\app\src\main\AndroidManifest.xml:9:9-57
+22        android:supportsRtl="true"
+22-->C:\Users\miash\AndroidStudioProjects\NUMAD22Sp_YutongShang\app\src\main\AndroidManifest.xml:10:9-35
+23        android:theme="@style/Theme.NUMAD22Sp_YutongShang" >
+23-->C:\Users\miash\AndroidStudioProjects\NUMAD22Sp_YutongShang\app\src\main\AndroidManifest.xml:11:9-59
+24        <activity
+24-->C:\Users\miash\AndroidStudioProjects\NUMAD22Sp_YutongShang\app\src\main\AndroidManifest.xml:12:9-14:40
+25            android:name="edu.neu.numad22sp_yutongshang.MainActivity4"
+25-->C:\Users\miash\AndroidStudioProjects\NUMAD22Sp_YutongShang\app\src\main\AndroidManifest.xml:13:13-42
+26            android:exported="false" />
+26-->C:\Users\miash\AndroidStudioProjects\NUMAD22Sp_YutongShang\app\src\main\AndroidManifest.xml:14:13-37
+27        <activity
+27-->C:\Users\miash\AndroidStudioProjects\NUMAD22Sp_YutongShang\app\src\main\AndroidManifest.xml:15:9-17:40
+28            android:name="edu.neu.numad22sp_yutongshang.MainActivity1"
+28-->C:\Users\miash\AndroidStudioProjects\NUMAD22Sp_YutongShang\app\src\main\AndroidManifest.xml:16:13-42
+29            android:exported="false" />
+29-->C:\Users\miash\AndroidStudioProjects\NUMAD22Sp_YutongShang\app\src\main\AndroidManifest.xml:17:13-37
+30        <activity
+30-->C:\Users\miash\AndroidStudioProjects\NUMAD22Sp_YutongShang\app\src\main\AndroidManifest.xml:18:9-20:40
+31            android:name="edu.neu.numad22sp_yutongshang.MainActivity3"
+31-->C:\Users\miash\AndroidStudioProjects\NUMAD22Sp_YutongShang\app\src\main\AndroidManifest.xml:19:13-42
+32            android:exported="false" />
+32-->C:\Users\miash\AndroidStudioProjects\NUMAD22Sp_YutongShang\app\src\main\AndroidManifest.xml:20:13-37
+33        <activity
+33-->C:\Users\miash\AndroidStudioProjects\NUMAD22Sp_YutongShang\app\src\main\AndroidManifest.xml:21:9-23:40
+34            android:name="edu.neu.numad22sp_yutongshang.MainActivity2"
+34-->C:\Users\miash\AndroidStudioProjects\NUMAD22Sp_YutongShang\app\src\main\AndroidManifest.xml:22:13-42
+35            android:exported="false" />
+35-->C:\Users\miash\AndroidStudioProjects\NUMAD22Sp_YutongShang\app\src\main\AndroidManifest.xml:23:13-37
+36        <activity
+36-->C:\Users\miash\AndroidStudioProjects\NUMAD22Sp_YutongShang\app\src\main\AndroidManifest.xml:24:9-32:20
+37            android:name="edu.neu.numad22sp_yutongshang.MainActivity"
+37-->C:\Users\miash\AndroidStudioProjects\NUMAD22Sp_YutongShang\app\src\main\AndroidManifest.xml:25:13-41
+38            android:exported="true" >
+38-->C:\Users\miash\AndroidStudioProjects\NUMAD22Sp_YutongShang\app\src\main\AndroidManifest.xml:26:13-36
+39            <intent-filter>
+39-->C:\Users\miash\AndroidStudioProjects\NUMAD22Sp_YutongShang\app\src\main\AndroidManifest.xml:27:13-31:29
+40                <action android:name="android.intent.action.MAIN" />
+40-->C:\Users\miash\AndroidStudioProjects\NUMAD22Sp_YutongShang\app\src\main\AndroidManifest.xml:28:17-69
+40-->C:\Users\miash\AndroidStudioProjects\NUMAD22Sp_YutongShang\app\src\main\AndroidManifest.xml:28:25-66
+41
+42                <category android:name="android.intent.category.LAUNCHER" />
+42-->C:\Users\miash\AndroidStudioProjects\NUMAD22Sp_YutongShang\app\src\main\AndroidManifest.xml:30:17-77
+42-->C:\Users\miash\AndroidStudioProjects\NUMAD22Sp_YutongShang\app\src\main\AndroidManifest.xml:30:27-74
+43            </intent-filter>
+44        </activity>
+45        <activity
+45-->[pub.devrel:easypermissions:3.0.0] C:\Users\miash\.gradle\caches\transforms-3\ab42f9ed99188b56fc20bfe013647bfd\transformed\jetified-easypermissions-3.0.0\AndroidManifest.xml:12:9-16:66
+46            android:name="pub.devrel.easypermissions.AppSettingsDialogHolderActivity"
+46-->[pub.devrel:easypermissions:3.0.0] C:\Users\miash\.gradle\caches\transforms-3\ab42f9ed99188b56fc20bfe013647bfd\transformed\jetified-easypermissions-3.0.0\AndroidManifest.xml:13:13-86
+47            android:exported="false"
+47-->[pub.devrel:easypermissions:3.0.0] C:\Users\miash\.gradle\caches\transforms-3\ab42f9ed99188b56fc20bfe013647bfd\transformed\jetified-easypermissions-3.0.0\AndroidManifest.xml:14:13-37
+48            android:label=""
+48-->[pub.devrel:easypermissions:3.0.0] C:\Users\miash\.gradle\caches\transforms-3\ab42f9ed99188b56fc20bfe013647bfd\transformed\jetified-easypermissions-3.0.0\AndroidManifest.xml:15:13-29
+49            android:theme="@style/EasyPermissions.Transparent" />
+49-->[pub.devrel:easypermissions:3.0.0] C:\Users\miash\.gradle\caches\transforms-3\ab42f9ed99188b56fc20bfe013647bfd\transformed\jetified-easypermissions-3.0.0\AndroidManifest.xml:16:13-63
+50        <activity
+50-->[com.google.android.gms:play-services-base:15.0.1] C:\Users\miash\.gradle\caches\transforms-3\969c5fe04f71805d278bc7c6fb4b2865\transformed\jetified-play-services-base-15.0.1\AndroidManifest.xml:23:9-26:75
+51            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+51-->[com.google.android.gms:play-services-base:15.0.1] C:\Users\miash\.gradle\caches\transforms-3\969c5fe04f71805d278bc7c6fb4b2865\transformed\jetified-play-services-base-15.0.1\AndroidManifest.xml:24:13-79
+52            android:exported="false"
+52-->[com.google.android.gms:play-services-base:15.0.1] C:\Users\miash\.gradle\caches\transforms-3\969c5fe04f71805d278bc7c6fb4b2865\transformed\jetified-play-services-base-15.0.1\AndroidManifest.xml:25:13-37
+53            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+53-->[com.google.android.gms:play-services-base:15.0.1] C:\Users\miash\.gradle\caches\transforms-3\969c5fe04f71805d278bc7c6fb4b2865\transformed\jetified-play-services-base-15.0.1\AndroidManifest.xml:26:13-72
+54
+55        <meta-data
+55-->[com.google.android.gms:play-services-basement:15.0.1] C:\Users\miash\.gradle\caches\transforms-3\f4498c984205a515a9f62eaf32012c33\transformed\jetified-play-services-basement-15.0.1\AndroidManifest.xml:23:9-25:69
+56            android:name="com.google.android.gms.version"
+56-->[com.google.android.gms:play-services-basement:15.0.1] C:\Users\miash\.gradle\caches\transforms-3\f4498c984205a515a9f62eaf32012c33\transformed\jetified-play-services-basement-15.0.1\AndroidManifest.xml:24:13-58
+57            android:value="@integer/google_play_services_version" />
+57-->[com.google.android.gms:play-services-basement:15.0.1] C:\Users\miash\.gradle\caches\transforms-3\f4498c984205a515a9f62eaf32012c33\transformed\jetified-play-services-basement-15.0.1\AndroidManifest.xml:25:13-66
+58
+59        <uses-library
+59-->[androidx.window:window:1.0.0] C:\Users\miash\.gradle\caches\transforms-3\8a814577c3bf581ff0fb5aa95a211166\transformed\jetified-window-1.0.0\AndroidManifest.xml:25:9-27:40
+60            android:name="androidx.window.extensions"
+60-->[androidx.window:window:1.0.0] C:\Users\miash\.gradle\caches\transforms-3\8a814577c3bf581ff0fb5aa95a211166\transformed\jetified-window-1.0.0\AndroidManifest.xml:26:13-54
+61            android:required="false" />
+61-->[androidx.window:window:1.0.0] C:\Users\miash\.gradle\caches\transforms-3\8a814577c3bf581ff0fb5aa95a211166\transformed\jetified-window-1.0.0\AndroidManifest.xml:27:13-37
+62        <uses-library
+62-->[androidx.window:window:1.0.0] C:\Users\miash\.gradle\caches\transforms-3\8a814577c3bf581ff0fb5aa95a211166\transformed\jetified-window-1.0.0\AndroidManifest.xml:28:9-30:40
+63            android:name="androidx.window.sidecar"
+63-->[androidx.window:window:1.0.0] C:\Users\miash\.gradle\caches\transforms-3\8a814577c3bf581ff0fb5aa95a211166\transformed\jetified-window-1.0.0\AndroidManifest.xml:29:13-51
+64            android:required="false" />
+64-->[androidx.window:window:1.0.0] C:\Users\miash\.gradle\caches\transforms-3\8a814577c3bf581ff0fb5aa95a211166\transformed\jetified-window-1.0.0\AndroidManifest.xml:30:13-37
+65    </application>
+66
+67</manifest>

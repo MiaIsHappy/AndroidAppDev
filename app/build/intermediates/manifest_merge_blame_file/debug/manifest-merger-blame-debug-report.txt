@@ -1,0 +1,76 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="edu.neu.numad22sp_yutongshang"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="26"
+8-->C:\Users\miash\AndroidStudioProjects\NUMAD22Sp_YutongShang\app\src\main\AndroidManifest.xml
+9        android:targetSdkVersion="32" />
+9-->C:\Users\miash\AndroidStudioProjects\NUMAD22Sp_YutongShang\app\src\main\AndroidManifest.xml
+10
+11    <application
+11-->C:\Users\miash\AndroidStudioProjects\NUMAD22Sp_YutongShang\app\src\main\AndroidManifest.xml:5:5-28:19
+12        android:allowBackup="true"
+12-->C:\Users\miash\AndroidStudioProjects\NUMAD22Sp_YutongShang\app\src\main\AndroidManifest.xml:6:9-35
+13        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+13-->[androidx.core:core:1.5.0-rc01] C:\Users\miash\.gradle\caches\transforms-3\7defcf0d33d70e21a767a07666acefba\transformed\core-1.5.0-rc01\AndroidManifest.xml:24:18-86
+14        android:debuggable="true"
+15        android:extractNativeLibs="false"
+16        android:icon="@mipmap/ic_launcher_yt"
+16-->C:\Users\miash\AndroidStudioProjects\NUMAD22Sp_YutongShang\app\src\main\AndroidManifest.xml:7:9-46
+17        android:label="@string/app_name"
+17-->C:\Users\miash\AndroidStudioProjects\NUMAD22Sp_YutongShang\app\src\main\AndroidManifest.xml:8:9-41
+18        android:roundIcon="@mipmap/ic_launcher_yt_round"
+18-->C:\Users\miash\AndroidStudioProjects\NUMAD22Sp_YutongShang\app\src\main\AndroidManifest.xml:9:9-57
+19        android:supportsRtl="true"
+19-->C:\Users\miash\AndroidStudioProjects\NUMAD22Sp_YutongShang\app\src\main\AndroidManifest.xml:10:9-35
+20        android:testOnly="true"
+21        android:theme="@style/Theme.NUMAD22Sp_YutongShang" >
+21-->C:\Users\miash\AndroidStudioProjects\NUMAD22Sp_YutongShang\app\src\main\AndroidManifest.xml:11:9-59
+22        <activity
+22-->C:\Users\miash\AndroidStudioProjects\NUMAD22Sp_YutongShang\app\src\main\AndroidManifest.xml:13:9-15:40
+23            android:name="edu.neu.numad22sp_yutongshang.MainActivity3"
+23-->C:\Users\miash\AndroidStudioProjects\NUMAD22Sp_YutongShang\app\src\main\AndroidManifest.xml:14:13-42
+24            android:exported="false" />
+24-->C:\Users\miash\AndroidStudioProjects\NUMAD22Sp_YutongShang\app\src\main\AndroidManifest.xml:15:13-37
+25        <activity
+25-->C:\Users\miash\AndroidStudioProjects\NUMAD22Sp_YutongShang\app\src\main\AndroidManifest.xml:16:9-18:40
+26            android:name="edu.neu.numad22sp_yutongshang.MainActivity2"
+26-->C:\Users\miash\AndroidStudioProjects\NUMAD22Sp_YutongShang\app\src\main\AndroidManifest.xml:17:13-42
+27            android:exported="false" />
+27-->C:\Users\miash\AndroidStudioProjects\NUMAD22Sp_YutongShang\app\src\main\AndroidManifest.xml:18:13-37
+28        <activity
+28-->C:\Users\miash\AndroidStudioProjects\NUMAD22Sp_YutongShang\app\src\main\AndroidManifest.xml:19:9-27:20
+29            android:name="edu.neu.numad22sp_yutongshang.MainActivity"
+29-->C:\Users\miash\AndroidStudioProjects\NUMAD22Sp_YutongShang\app\src\main\AndroidManifest.xml:20:13-41
+30            android:exported="true" >
+30-->C:\Users\miash\AndroidStudioProjects\NUMAD22Sp_YutongShang\app\src\main\AndroidManifest.xml:21:13-36
+31            <intent-filter>
+31-->C:\Users\miash\AndroidStudioProjects\NUMAD22Sp_YutongShang\app\src\main\AndroidManifest.xml:22:13-26:29
+32                <action android:name="android.intent.action.MAIN" />
+32-->C:\Users\miash\AndroidStudioProjects\NUMAD22Sp_YutongShang\app\src\main\AndroidManifest.xml:23:17-69
+32-->C:\Users\miash\AndroidStudioProjects\NUMAD22Sp_YutongShang\app\src\main\AndroidManifest.xml:23:25-66
+33
+34                <category android:name="android.intent.category.LAUNCHER" />
+34-->C:\Users\miash\AndroidStudioProjects\NUMAD22Sp_YutongShang\app\src\main\AndroidManifest.xml:25:17-77
+34-->C:\Users\miash\AndroidStudioProjects\NUMAD22Sp_YutongShang\app\src\main\AndroidManifest.xml:25:27-74
+35            </intent-filter>
+36        </activity>
+37
+38        <uses-library
+38-->[androidx.window:window:1.0.0] C:\Users\miash\.gradle\caches\transforms-3\8a814577c3bf581ff0fb5aa95a211166\transformed\jetified-window-1.0.0\AndroidManifest.xml:25:9-27:40
+39            android:name="androidx.window.extensions"
+39-->[androidx.window:window:1.0.0] C:\Users\miash\.gradle\caches\transforms-3\8a814577c3bf581ff0fb5aa95a211166\transformed\jetified-window-1.0.0\AndroidManifest.xml:26:13-54
+40            android:required="false" />
+40-->[androidx.window:window:1.0.0] C:\Users\miash\.gradle\caches\transforms-3\8a814577c3bf581ff0fb5aa95a211166\transformed\jetified-window-1.0.0\AndroidManifest.xml:27:13-37
+41        <uses-library
+41-->[androidx.window:window:1.0.0] C:\Users\miash\.gradle\caches\transforms-3\8a814577c3bf581ff0fb5aa95a211166\transformed\jetified-window-1.0.0\AndroidManifest.xml:28:9-30:40
+42            android:name="androidx.window.sidecar"
+42-->[androidx.window:window:1.0.0] C:\Users\miash\.gradle\caches\transforms-3\8a814577c3bf581ff0fb5aa95a211166\transformed\jetified-window-1.0.0\AndroidManifest.xml:29:13-51
+43            android:required="false" />
+43-->[androidx.window:window:1.0.0] C:\Users\miash\.gradle\caches\transforms-3\8a814577c3bf581ff0fb5aa95a211166\transformed\jetified-window-1.0.0\AndroidManifest.xml:30:13-37
+44    </application>
+45
+46</manifest>
