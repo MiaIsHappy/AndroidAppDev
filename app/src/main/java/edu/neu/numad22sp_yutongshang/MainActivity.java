@@ -22,7 +22,7 @@ import pub.devrel.easypermissions.EasyPermissions;
 public class MainActivity extends AppCompatActivity {
 
     public ArrayList<ItemCard> itemList = new ArrayList<>();
-
+// test
 //    public RecyclerView recyclerView;
 //    public RviewAdapter rviewAdapter;
 //    public RecyclerView.LayoutManager rLayoutManger;
