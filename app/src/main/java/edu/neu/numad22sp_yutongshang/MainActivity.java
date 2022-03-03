@@ -23,6 +23,8 @@ public class MainActivity extends AppCompatActivity {
 
     public ArrayList<ItemCard> itemList = new ArrayList<>();
 // test
+
+    // tets2
 //    public RecyclerView recyclerView;
 //    public RviewAdapter rviewAdapter;
 //    public RecyclerView.LayoutManager rLayoutManger;
