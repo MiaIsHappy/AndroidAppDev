@@ -15,6 +15,12 @@ import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
 import java.util.ArrayList;
 
+import edu.neu.numad22sp_yutongshang.ItemCard;
+import edu.neu.numad22sp_yutongshang.MainActivity1;
+import edu.neu.numad22sp_yutongshang.MainActivity2;
+import edu.neu.numad22sp_yutongshang.MainActivity3;
+import edu.neu.numad22sp_yutongshang.MainActivity4;
+import edu.neu.numad22sp_yutongshang.MainActivity5;
 import pub.devrel.easypermissions.AfterPermissionGranted;
 import pub.devrel.easypermissions.EasyPermissions;
 
@@ -22,11 +28,8 @@ import pub.devrel.easypermissions.EasyPermissions;
 public class MainActivity extends AppCompatActivity {
 
     public ArrayList<ItemCard> itemList = new ArrayList<>();
-// test
 
-    // tets2
-    //t3
-//    public RecyclerView recyclerView;
+    //    public RecyclerView recyclerView;
 //    public RviewAdapter rviewAdapter;
 //    public RecyclerView.LayoutManager rLayoutManger;
 //    public FloatingActionButton fab;
@@ -43,6 +46,7 @@ public class MainActivity extends AppCompatActivity {
         Button bt_2 = (Button) findViewById(R.id.button);
         Button bt_3 = (Button) findViewById(R.id.button2);
         Button bt_4 = (Button) findViewById(R.id.button3);
+        Button bt_5 = (Button) findViewById(R.id.button4);
 
 
 
@@ -71,6 +75,13 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v){
                 startActivity(new Intent(MainActivity.this, MainActivity4.class));
+            }
+        });
+
+        bt_5.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v){
+                startActivity(new Intent(MainActivity.this, MainActivity5.class));
             }
         });
 
