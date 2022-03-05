@@ -36,7 +36,7 @@ public class MainActivity extends AppCompatActivity {
 //
 //    public static final String KEY_OF_INSTANCE = "KEY_OF_INSTANCE";
 //    public static final String NUMBER_OF_ITEMS = "NUMBER_OF_ITEMS";
-//test2
+//test3
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
