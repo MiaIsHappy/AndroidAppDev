@@ -26,7 +26,7 @@ import com.android.volley.toolbox.Volley;
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
-
+//A6 at your service
 public class MainActivity5 extends AppCompatActivity {
 
     // weather url to get JSON
