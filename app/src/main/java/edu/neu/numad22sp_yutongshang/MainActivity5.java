@@ -60,16 +60,16 @@ public class MainActivity5 extends AppCompatActivity {
 
         textView2 = findViewById(R.id.textView6);
 
-        Log.v("00-X", "01");
+       // Log.v("00-X", "01");
         spinner = (ProgressBar) findViewById(R.id.progressBar);
         spinner.setVisibility(View.GONE);
 
-        Log.v("00-X", "02");
+       // Log.v("00-X", "02");
 
         Click.setOnClickListener(new View.OnClickListener() {
             public void onClick(View view) {
                 mEdit = (EditText) findViewById(R.id.editTextTextPostalAddress);
-                Log.v("ASCCC-1", mEdit.getText().toString());
+            //    Log.v("ASCCC-1", mEdit.getText().toString());
                 //Log.v("ASCCCX-1", mEdit.getText().toString().length());
                 // mText = (TextView)findViewById(R.id.textView1);
                 // mText.setText("Welcome "+mEdit.getText().toString()+"!");
@@ -84,8 +84,8 @@ public class MainActivity5 extends AppCompatActivity {
                 } else {
                     ts = mEdit.getText().toString();
                 }
-                Log.v("ASCCC-1x", mEdit.getText().toString());
-                Log.v("ASCCC-11X", ts);
+              //  Log.v("ASCCC-1x", mEdit.getText().toString());
+              //  Log.v("ASCCC-11X", ts);
 
                 obtainLocation();
             }
@@ -116,7 +116,7 @@ public class MainActivity5 extends AppCompatActivity {
         StringRequest request = new StringRequest(Request.Method.GET, url, new Response.Listener<String>() {
 
             public void onResponse(String response) {
-                Log.i("ASCCC-3", response);
+              //  Log.i("ASCCC-3", response);
 
                 JSONObject obj = new JSONObject();
                 try {
@@ -147,7 +147,7 @@ public class MainActivity5 extends AppCompatActivity {
         }, new Response.ErrorListener() {
 
             public void onErrorResponse(VolleyError error) {
-                Log.d("error", error.toString());
+              //  Log.d("error", error.toString());
                 spinner.setVisibility(View.GONE);
             }
         });
