@@ -24,6 +24,4 @@ Week 7 8 9
        4. We build the app with Firebase Realtime Database and notifications without using Firebase Cloud Messaging.  We experiment with the receiving app running in the foreground and in the background.
        5. The app notify the user in a way that recognizes the message  That is, go beyond just text in your notification.  If you aren't sure what can be in a notification other than text, refer to this https://developer.android.com/guide/topics/ui/notifiers/notifications#Templates
        6. Every instance of your app of the same version will have that same series of images in its resources.  Each image has a unique identifier.  Send the unique identifier that identifies an image, not the actual pixels of the image.
-       We completed and tested this prototype project in April 2022. This is a collaborative project of team member of 4
-![image](https://user-images.githubusercontent.com/98197405/163482306-504e4b94-5ffe-48d8-a3ec-3c0b5d558fa5.png)
-
+       We will complete and test this prototype project in April 2022. 
