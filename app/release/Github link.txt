@@ -1,0 +1,9 @@
+Yutong Shang
+A6 HW
+Github: https://github.com/MarisaShang03/AndroidAppDev.git
+
+My app asks users to enter a valid zip code, and return the temperature, ultraviolet level (UV level), city name, and state of the place entered.
+If the zip code is not valid, I will show an error message.
+
+I used a progress bar (a spinning circle) to show the web service connection is in process. But because the connection is very quick, the process bar
+only shows up for a few second.

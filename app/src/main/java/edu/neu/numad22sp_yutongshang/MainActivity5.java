@@ -116,7 +116,7 @@ public class MainActivity5 extends AppCompatActivity {
         StringRequest request = new StringRequest(Request.Method.GET, url, new Response.Listener<String>() {
 
             public void onResponse(String response) {
-              //  Log.i("ASCCC-3", response);
+                Log.i("ASCCC-3", response);
 
                 JSONObject obj = new JSONObject();
                 try {
@@ -137,7 +137,7 @@ public class MainActivity5 extends AppCompatActivity {
                     e.printStackTrace();
                 }
                 try {
-                    textView1.setText(obj2.getString("temp") + " Celsius and " + obj2.getString("uv") + " UV");
+                    textView1.setText(obj2.getString("temp") + " Celsius and " + obj2.getString("UV") + "UV");
                     textView2.setText("In the City of " + obj2.getString("city_name") + " ," + obj2.getString("state_code"));
                 } catch (JSONException e) {
                     e.printStackTrace();
